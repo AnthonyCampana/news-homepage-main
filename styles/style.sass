@@ -1,0 +1,371 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap')
+
+//Primary
+$orange: hsl(35, 77%, 62%)
+$red: hsl(5, 85%, 63%)
+
+//Neutral
+$white: hsl(36, 100%, 99%)
+$grayish-blue: hsl(233, 8%, 79%)
+$dark-grayish-blue: hsl(236, 13%, 42%)
+$dark-blue: hsl(240, 100%, 5%)
+
+//weight
+$weight-400: 400
+$weight-700: 700
+$weight-800: 800
+
+//font-family
+$font-family: "Inter", sans-serif
+
+*
+    margin: 0rem
+    padding: 0rem
+    box-sizing: border-box
+
+.attribution
+    font-size: 11px
+    text-align: center
+.attribution a
+    color: hsl(228, 45%, 44%)
+
+@media screen and (min-width: 376px)
+    body
+        width: 100vw
+        height: 101vh
+        background-color: $white
+        display: flex
+        flex-direction: column
+        align-items: center
+    main
+        width: 77.1%
+        height: 99.011%
+        display: flex
+        flex-direction: column
+    nav
+        width: 100%
+        display: flex
+        justify-content: space-between
+        padding-top: 5.55rem
+    .nav-link-container-desktop
+        display: flex
+        justify-content: space-between
+        width: 38.72%
+        height: 100%
+        align-items: center
+        margin-right: .1rem
+    .sidenav-exit-icon
+        display: none
+    .nav-link-container-desktop > a
+        font-family: $font-family
+        color: $grayish-blue
+        font-weight: $weight-400
+        text-decoration: none
+        font-size: 15px
+        margin-top: 0.1rem
+    .nav-link-container-desktop > a:hover
+        color: $red
+    .nav-link-container-mobile
+        display: none
+    .recent-article-container
+        display: flex
+        width: 100%
+        height: 50.1%
+        margin-top: 3.45rem
+        justify-content: space-between
+    .feature-news-article
+        width: 65.7%
+    .feature-news-article-image
+        background-image: url("../assets/images/image-web-3-desktop.jpg")
+        width: 100%
+        height: 58.5%
+        background-size: contain
+    .feature-article-container
+        display: flex
+        margin-top: 1.86rem
+        height: 35.44%
+        justify-content: space-between
+    .feature-article-title
+        font-weight: $weight-800
+        font-family: $font-family
+        color: $dark-blue
+        font-size: 56.5px
+        line-height: 3.5rem
+        width: 69%
+        letter-spacing: 0.063rem
+        padding-top: 0.3rem
+        word-spacing: 0.2rem
+    .feature-article-container > div
+        display: flex
+        flex-direction: column
+        width: 63.9%
+    .feature-article-description
+        font-family: $font-family
+        color: $dark-grayish-blue
+        font-weight: $weight-400
+        width: 96%
+        font-size: 15px
+        line-height: 1.63rem
+        word-spacing: 0.03rem
+    .feature-article-link
+        background-color: $red
+        font-weight: $weight-700
+        font-family: $font-family
+        color: $white
+        border: none
+        margin-top: 1.8rem
+        width: 52.9%
+        height: 26.5%
+        font-size: 15px
+        padding-top: 0.1rem
+        letter-spacing: 0.23rem
+    .feature-article-link:hover
+        background-color: $dark-blue
+    .new-articles
+        background-color: $dark-blue
+        width: 31.5%
+        display: flex
+        flex-direction: column
+        padding: 1.7rem 1.4rem 0rem 1.4rem
+    .new-artcles-title
+        font-family: $font-family
+        color: $orange
+        font-weight: $weight-700
+        font-size: 41px
+        margin-bottom: 1.8rem
+    .new-article-title
+        font-family: $font-family
+        color: $white
+        font-weight: $weight-800
+        font-size: 20.3px
+        margin-bottom: 0.5rem
+    .new-article-title:hover
+        color: $orange
+    .new-article-description
+        font-family: $font-family
+        color: $grayish-blue
+        font-weight: $weight-400
+        font-size: 15.05px
+        line-height: 1.6rem
+    hr
+        color: $grayish-blue
+        margin-top: 1.8rem
+        margin-bottom: 1.85rem
+    .popular-article-container
+        display: flex
+        margin-top: 4.1rem
+        height: 13.1%
+        width: 99.8%
+        justify-content: space-between
+    .popular-article
+        display: flex
+        justify-content: space-between
+        width: 31.4%
+    .popular-article > img
+        width: 29%
+        height: 95%
+        margin-top: .3rem
+    .popular-article-info
+        width: 64.5%
+    .popular-article-number
+        color: $red
+        font-family: $font-family
+        font-size: 34px
+        font-weight: 800
+    .popular-article-title
+        font-family: $font-family
+        color: $dark-blue
+        font-weight: $weight-700
+        font-size: 18.6px
+        margin-top: 0.5rem
+    .popular-article-title:hover
+        color: $red
+    .popular-article-description
+        font-family: $font-family
+        color: $dark-grayish-blue
+        font-weight: $weight-400
+        margin-top: 0.7rem
+        font-size: 15.1px
+        line-height: 1.6rem
+@media screen and (max-width: 375px)
+    img
+        width: 10%
+        height: 10%
+    body
+        width: 100vw
+        height: 101vh
+        background-color: $white
+        display: flex
+        flex-direction: column
+        align-items: center
+    main
+        width: 91.5%
+        height: 99.011%
+        display: flex
+        flex-direction: column
+    nav
+        width: 100%
+        height: 2.3%
+        display: flex
+        justify-content: space-between
+        padding-top: .85rem
+    nav>img
+        width: 13%
+        height: 100%
+    .nav-link-container-desktop
+        display: none
+        flex-direction: column
+        background-color: $white
+        height: 100%
+        width: 68.2%
+        z-index: 1
+        position: fixed
+        top: 0
+        right: 0
+        overflow-x: hidden
+        padding: 9.1rem 0rem 0rem 1.5rem
+        transition: 0.5s
+    .nav-link-container-desktop > a
+        font-family: $font-family
+        color: $dark-blue
+        font-weight: $weight-400
+        text-decoration: none
+        font-size: 18px
+        margin-bottom: 1.7rem
+    .sidenav-exit-icon
+        background-image: url("../assets/images/icon-menu-close.svg")
+        background-repeat: no-repeat
+        background-size: contain
+        height: 2%
+        width: 12%
+        position: absolute
+        top: 26px
+        right: 20px
+    .nav-link-container-mobile
+        background-image: url("../assets/images/icon-menu.svg")
+        width: 11.5%
+        background-repeat: no-repeat
+        background-position-y: 0.4rem
+    .recent-article-container
+        display: flex
+        width: 100%
+        height: 66.1%
+        margin-top: 2rem
+        flex-direction: column
+    .feature-news-article
+        width: 100%
+        height: 56.2%
+    .feature-news-article-image
+        background-image: url("../assets/images/image-web-3-mobile.jpg")
+        width: 100%
+        height: 43.0%
+        background-size: contain
+    .feature-article-container
+        display: flex
+        margin-top: 1.14rem
+        height: 45.8%
+        flex-direction: column
+    .feature-article-title
+        font-weight: $weight-800
+        font-family: $font-family
+        color: $dark-blue
+        font-size: 39.7px
+        line-height: 2.5rem
+        width: 81%
+        letter-spacing: 0.063rem
+        padding-top: 0.5rem
+    .feature-article-container > div
+        display: flex
+        flex-direction: column
+        width: 97%
+        height: 55%
+        margin-top: .9rem
+    .feature-article-description
+        font-family: $font-family
+        color: $dark-grayish-blue
+        font-weight: $weight-400
+        width: 100%
+        font-size: 15px
+        line-height: 1.64rem
+        word-spacing: 0.03rem
+    .feature-article-link
+        background-color: $red
+        font-weight: $weight-700
+        font-family: $font-family
+        color: $dark-blue
+        border: none
+        margin-top: 1.5rem
+        width: 55.5%
+        height: 27%
+        font-size: 15px
+        padding-top: 0.06rem
+        letter-spacing: 0.23rem
+    .new-articles
+        background-color: $dark-blue
+        width: 100%
+        display: flex
+        flex-direction: column
+        margin-top: 0.3rem
+        height: 39.5%
+        padding: 1.3rem 1.2rem 0rem 1.3rem
+    .new-artcles-title
+        font-family: $font-family
+        color: $orange
+        font-weight: $weight-700
+        font-size: 33px
+        margin-bottom: 1.8rem
+    .new-article-title
+        font-family: $font-family
+        color: $white
+        font-weight: $weight-800
+        font-size: 20.3px
+        margin-bottom: 0.5rem
+    .new-article-title:hover
+        color: $orange
+    .new-article-description
+        font-family: $font-family
+        color: $grayish-blue
+        font-weight: $weight-400
+        font-size: 15.05px
+        line-height: 1.6rem
+    hr
+        color: $grayish-blue
+        margin-top: 1.8rem
+        margin-bottom: 1.85rem
+    .popular-article-container
+        display: flex
+        margin-top: 0.7rem
+        height: 13.1%
+        width: 99.8%
+        flex-direction: column
+    .popular-article
+        display: flex
+        justify-content: space-between
+        width: 100%
+        margin-bottom: 1.7rem
+    .popular-article > img
+        width: 29.4%
+        height: 97%
+        margin-top: 0.3rem
+    .popular-article-info
+        width: 64.1%
+    .popular-article-number
+        color: $red
+        font-family: $font-family
+        font-size: 34px
+        font-weight: 800
+    .popular-article-title
+        font-family: $font-family
+        color: $dark-blue
+        font-weight: $weight-700
+        font-size: 18.6px
+        margin-top: 0.5rem
+    .popular-article-title:hover
+        color: $red
+    .popular-article-description
+        font-family: $font-family
+        color: $dark-grayish-blue
+        font-weight: $weight-400
+        margin-top: 0.7rem
+        font-size: 15.1px
+        line-height: 1.6rem
